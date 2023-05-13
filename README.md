@@ -1283,6 +1283,3 @@ loaded
     
 ![png](./Images/output_105_0.png)
     
-
-
-<hr><center><h1> END OF PART 1</h1></center><hr>
