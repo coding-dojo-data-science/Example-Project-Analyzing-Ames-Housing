@@ -1286,21 +1286,3 @@ loaded
 
 
 <hr><center><h1> END OF PART 1</h1></center><hr>
-
-### Admin: Converting Notebook to Markdown
-- Source: https://www.python-engineer.com/posts/convert-colab-markdown/
-
-- In Google Colab:
-  - Click File > Download as > Notebook (.ipynb)
-  - Use Files sidebar and click to Upload a file
-  - Convert it using a bash jupyter command in a code cell:
-
-  ```bash
-  !jupyter nbconvert mynotebook.ipynb --to markdown
-  ```
-  
-
-
-```python
-# !jupyter nbconvert  Example_Ames_CRISP_DM_Project_Notebook_Part1-final.ipynb --to markdown 
-```
