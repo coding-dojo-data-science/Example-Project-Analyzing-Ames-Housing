@@ -2994,19 +2994,14 @@ Not quite yet. Our stakeholders wanting some insights and recommendations, as we
 
 
 
-```python
-# Get means corresponding to plot
-df.groupby("Central Air")['SalePrice'].mean()
+
+
 ```
-
-
-
-
-    Central Air
-    N    101890.479592
-    Y    186483.877835
-    Name: SalePrice, dtype: float64
-
+Central Air
+N    101890.479592
+Y    186483.877835
+Name: SalePrice, dtype: float64
+```
 
 
 - Homes that have Central Air conditioning sell for ~\$85,000 more than homes without central air.
