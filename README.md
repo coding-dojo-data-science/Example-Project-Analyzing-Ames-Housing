@@ -25,6 +25,7 @@ We will be following the CRISP-DM workflow for our analysis.
 - [Phase 5) Evaluation](#phase5)
 - [Phase 6) Deployment](#phase6)
 
+___
 
 <a name='phase1'></a>
 # Phase 1) Business Understanding
@@ -41,6 +42,8 @@ We will be following the CRISP-DM workflow for our analysis.
 
 **What do they need/expect?**
 - Actionable insights/recommendations for which modifications they can make to increase the price of their homes.
+
+___
 
 <a name='phase2'></a>
 # Phase 2) Data Understanding
@@ -2106,6 +2109,8 @@ plot_categorical_vs_target(df, feature);
   - Does this feature appear to be a predictor of the target?
     - Somewhat, but it loks like having more than 2 half baths decrease the home value?
 
+___
+
 <a name='phase3'></a>
 
 # Phase 3) Data Preparation
@@ -2137,6 +2142,7 @@ plot_categorical_vs_target(df, feature);
 - Missing values were imputed using a placeholder value "NA".
 - The features were then encoded with OneHotEncoder.
 
+___
 
 <a name='phase4'></a>
 # Phase 4) Modeling
@@ -2181,6 +2187,7 @@ RMSE = 27,919.37
 R^2 = 0.84
 ```
 
+___
 
 <a name='phase5'></a>
 # Phase 5) Evaluation
@@ -2200,6 +2207,8 @@ It was not overfit and had consistent performance.
 
 
 Not quite yet. Our stakeholders wanting some insights and recommendations, as well. (See phase 6 below).
+
+___
 
 <a name='phase6'></a>
 # Phase 6) Deployment (Recommendations)
