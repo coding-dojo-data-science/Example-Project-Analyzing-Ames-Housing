@@ -109,7 +109,7 @@ The following featurs were renamed for clarity:
 
 ### Are there missing values?
 
-... 
+
 
 <img src="./Images/output_61_0.png">
 
@@ -212,7 +212,6 @@ The following featurs were renamed for clarity:
   
   - So we first dropped null values from SalePrice and then confirmed there were no remiaining duplicate PID's.
 
-...
 
 
 ### Are there any features with inconsistent values? (“yes” vs. “Yes”)
@@ -562,21 +561,6 @@ The following features were dropped from the model for the reasons listed below:
 
 
 
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Bldg Type"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-
 
 
     
@@ -611,13 +595,6 @@ df[feature].dtype
   - The homeowner may be able to convert their home to a duplex, etc.
 
 
-
-
-```python
-plot_categorical_vs_target(df, feature);
-```
-
-
     
 ![png](./Images/output_180_0.png)
     
@@ -642,27 +619,6 @@ plot_categorical_vs_target(df, feature);
   - 2.5Unf Two and one-half story: 2nd level unfinished
   - SFoyer Split Foyer
   - SLvl Split Level
-
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "House Style"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-explore_categorical(df, feature);
-```
-
 
     
 ![png](./Images/output_185_0.png)
@@ -695,12 +651,6 @@ explore_categorical(df, feature);
 6. Is there a business case/understanding reason to exclude based on our business case?
   - No, the homeowner could remodel their home to change this.
 
-
-
-
-```python
-plot_categorical_vs_target(df, feature);
-```
 
 
     
