@@ -76,127 +76,7 @@ We will be following the CRISP-DM workflow for our analysis.
 Please see the <a href="https://docs.google.com/document/d/1nmnel7g35aMOl0mKiSsTHXT8wRzbJ1EktKNqYFEmpWE/edit?usp=sharing" target="_blank">Data Dictionary File</a> for full details.
 
 #### Data Dictionary:
-
-<div><h3>Data Dictionary</h3><ul><li>SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict for this challenge.</li><li>MSZoning: Identifies the general zoning classification of the sale.<ul>
-<li>A Agriculture</li>
-<li>C Commercial</li>
-<li>FV Floating Village Residential</li>
-<li>I Industrial</li>
-<li>RH Residential High Density</li>
-<li>RL Residential Low Density</li>
-<li>RP Residential Low Density Park</li>
-<li>RM Residential Medium Density</li></ul></li><li>LotFrontage: Linear feet of street connected to property</li><li>LotArea: Lot size in square feet</li><li>Street: Type of road access to property<ul>
-<li>Grvl Gravel</li>
-<li>Pave Paved</li></ul></li><li>Alley: Type of alley access to property<ul>
-<li>Grvl Gravel</li>
-<li>Pave Paved</li>
-<li>NA No alley access</li></ul></li><li>Utilities: Type of utilities available<ul>
-<li>AllPub All public Utilities (E,G,W,&amp; S)</li>
-<li>NoSewr Electricity, Gas, and Water (Septic Tank)</li>
-<li>NoSeWa Electricity and Gas Only</li>
-<li>ELO Electricity only</li></ul></li><li>Neighborhood: Physical locations within Ames city limits<ul>
-<li>Blmngtn Bloomington Heights</li>
-<li>Blueste Bluestem</li>
-<li>BrDale Briardale</li>
-<li>BrkSide Brookside</li>
-<li>ClearCr Clear Creek</li>
-<li>CollgCr College Creek</li>
-<li>Crawfor Crawford</li>
-<li>Edwards Edwards</li>
-<li>Gilbert Gilbert</li>
-<li>IDOTRR Iowa DOT and Rail Road</li>
-<li>MeadowV Meadow Village</li>
-<li>Mitchel Mitchell</li>
-<li>Names North Ames</li>
-<li>NoRidge Northridge</li>
-<li>NPkVill Northpark Villa</li>
-<li>NridgHt Northridge Heights</li>
-<li>NWAmes Northwest Ames</li>
-<li>OldTown Old Town</li>
-<li>SWISU South &amp; West of Iowa State University</li>
-<li>Sawyer Sawyer</li>
-<li>SawyerW Sawyer West</li>
-<li>Somerst Somerset</li>
-<li>StoneBr Stone Brook</li>
-<li>Timber Timberland</li>
-<li>Veenker Veenker</li></ul></li><li>BldgType: Type of dwelling<ul>
-<li>1Fam Single-family Detached</li>
-<li>2FmCon Two-family Conversion; originally built as one-family dwelling</li>
-<li>Duplx Duplex</li>
-<li>TwnhsE Townhouse End Unit</li>
-<li>TwnhsI Townhouse Inside Unit</li></ul></li><li>HouseStyle: Style of dwelling<ul>
-<li>1Story One story</li>
-<li>1.5Fin One and one-half story: 2nd level finished</li>
-<li>1.5Unf One and one-half story: 2nd level unfinished</li>
-<li>2Story Two story</li>
-<li>2.5Fin Two and one-half story: 2nd level finished</li>
-<li>2.5Unf Two and one-half story: 2nd level unfinished</li>
-<li>SFoyer Split Foyer</li>
-<li>SLvl Split Level</li></ul></li><li>OverallQual: Overall material and finish quality<ul>
-<li>10 Very Excellent</li>
-<li>9 Excellent</li>
-<li>8 Very Good</li>
-<li>7 Good</li>
-<li>6 Above Average</li>
-<li>5 Average</li>
-<li>4 Below Average</li>
-<li>3 Fair</li>
-<li>2 Poor</li>
-<li>1 Very Poor</li></ul></li><li>OverallCond: Overall condition rating<ul>
-<li>10 Very Excellent</li>
-<li>9 Excellent</li>
-<li>8 Very Good</li>
-<li>7 Good</li>
-<li>6 Above Average</li>
-<li>5 Average</li>
-<li>4 Below Average</li>
-<li>3 Fair</li>
-<li>2 Poor</li>
-<li>1 Very Poor</li></ul></li><li>YearBuilt: Original construction date</li><li>YearRemodAdd: Remodel date (same as construction date if no remodeling or additions)</li><li>ExterQual: Exterior material quality<ul>
-<li>Ex Excellent</li>
-<li>Gd Good</li>
-<li>TA Average/Typical</li>
-<li>Fa Fair</li>
-<li>Po Poor</li></ul></li><li>ExterCond: Present condition of the material on the exterior<ul>
-<li>Ex Excellent</li>
-<li>Gd Good</li>
-<li>TA Average/Typical</li>
-<li>Fa Fair</li>
-<li>Po Poor</li></ul></li><li>BsmtUnfSF: Unfinished square feet of basement area</li><li>TotalBsmtSF: Total square feet of basement area</li><li>CentralAir: Central air conditioning<ul>
-<li>N No</li>
-<li>Y Yes</li></ul></li><li>GrLivArea: Above grade (ground) living area square feet</li><li>BsmtFullBath: Basement full bathrooms</li><li>BsmtHalfBath: Basement half bathrooms</li><li>FullBath: Full bathrooms above grade</li><li>HalfBath: Half baths above grade</li><li>Bedroom: Number of bedrooms above basement level</li><li>Kitchen: Number of kitchens</li><li>KitchenQual: Kitchen quality<ul>
-<li>Ex Excellent</li>
-<li>Gd Good</li>
-<li>TA Typical/Average</li>
-<li>Fa Fair</li>
-<li>Po Poor</li></ul></li><li>TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)</li><li>GarageType: Garage location<ul>
-<li>2Types More than one type of garage</li>
-<li>Attchd Attached to home</li>
-<li>Basment Basement Garage</li>
-<li>BuiltIn Built-In (Garage part of house - typically has room above garage)</li>
-<li>CarPort Car Port</li>
-<li>Detchd Detached from home</li>
-<li>NA No Garage</li></ul></li><li>GarageYrBlt: Year garage was built</li><li>GarageCars: Size of garage in car capacity</li><li>GarageArea: Size of garage in square feet</li><li>GarageQual: Garage quality<ul>
-<li>Ex Excellent</li>
-<li>Gd Good</li>
-<li>TA Typical/Average</li>
-<li>Fa Fair</li>
-<li>Po Poor</li>
-<li>NA No Garage</li></ul></li><li>GarageCond: Garage condition<ul>
-<li>Ex Excellent</li>
-<li>Gd Good</li>
-<li>TA Typical/Average</li>
-<li>Fa Fair</li>
-<li>Po Poor</li>
-<li>NA No Garage</li></ul></li><li>PavedDrive: Paved driveway<ul>
-<li>Y Paved</li>
-<li>P Partial Pavement</li>
-<li>N Dirt/Gravel</li></ul></li><li>Fence: Fence quality<ul>
-<li>GdPrv Good Privacy</li>
-<li>MnPrv Minimum Privacy</li>
-<li>GdWo Good Wood</li>
-<li>MnWw Minimum Wood/Wire</li>
-<li>NA No Fence</li></ul></li></ul></div>
+Please see the feature inspection section below for the definitions of the features that were included in the model. 
 
 
 
@@ -619,25 +499,6 @@ The following features were dropped from the model for the reasons listed below:
 
 
 
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Alley"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-explore_categorical(df,feature);
-```
-
-
     
 ![png](./Images/output_157_0.png)
     
@@ -672,12 +533,6 @@ explore_categorical(df,feature);
 6. Is there a business case/understanding reason to exclude based on our business case?
   - It may be beyond homeowner's control.
 
-
-
-
-```python
-plot_categorical_vs_target(df, feature);
-```
 
 
     
@@ -718,9 +573,7 @@ df[feature].dtype
 
 
 
-```python
-explore_categorical(df,feature);
-```
+
 
 
     
@@ -876,23 +729,8 @@ plot_categorical_vs_target(df, feature);
 
 
 
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Overall Qual"
-df[feature].dtype
-```
 
 
-
-
-    dtype('int64')
-
-
-
-
-```python
-explore_numeric(df,feature);
-```
 
 
     
@@ -928,9 +766,7 @@ explore_numeric(df,feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
 
     
@@ -958,27 +794,6 @@ plot_numeric_vs_target(df, feature);
   -  3: Fair
   -  2: Poor
   -  1: Very Poor
-
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Overall Cond"
-df[feature].dtype
-```
-
-
-
-
-    dtype('int64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
-
 
     
 ![png](./Images/output_199_0.png)
@@ -1013,9 +828,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
 
     
@@ -1036,25 +849,6 @@ plot_numeric_vs_target(df, feature);
 - "Year Remodeled" (renamed from original "YearRemodAdd"): 
   - Remodel date (same as construction date if no remodeling or additions)
 
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Year Remodeled"
-df[feature].dtype
-```
-
-
-
-
-    dtype('int64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -1090,9 +884,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
 
     
@@ -1117,30 +909,6 @@ plot_numeric_vs_target(df, feature);
   - Fa: Fair
   - Po: Poor
 
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Exter Qual"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-qual_order = ['Po','Fa','TA','Gd','Ex']
-```
-
-
-```python
-explore_categorical(df, feature, order=qual_order);
-```
 
 
     
@@ -1175,12 +943,6 @@ explore_categorical(df, feature, order=qual_order);
 
 
 
-
-```python
-plot_categorical_vs_target(df, feature, order=qual_order);
-```
-
-
     
 ![png](./Images/output_223_0.png)
     
@@ -1202,27 +964,6 @@ plot_categorical_vs_target(df, feature, order=qual_order);
   - TA: Average/Typical
   - Fa: Fair
   - Po: Poor
-
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Exter Cond"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-explore_categorical(df,  feature, order = qual_order);
-```
-
 
     
 ![png](./Images/output_228_0.png)
@@ -1255,13 +996,6 @@ explore_categorical(df,  feature, order = qual_order);
   - No.
 
 
-
-
-```python
-plot_categorical_vs_target(df, feature, order=qual_order);
-```
-
-
     
 ![png](./Images/output_230_0.png)
     
@@ -1278,25 +1012,6 @@ plot_categorical_vs_target(df, feature, order=qual_order);
 
 
 - "BsmtUnfSF": Unfinished square feet of basement area
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Bsmt Unf Sqft"
-df[feature].dtype
-```
-
-
-
-
-    dtype('float64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -1332,9 +1047,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
     - NaN's Found: 1 (0.03%)
 
@@ -1356,25 +1069,6 @@ plot_numeric_vs_target(df, feature);
 
 
 - "TotalBsmtSF": Total square feet of basement area
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Total Bsmnt Sqft"
-df[feature].dtype
-```
-
-
-
-
-    dtype('float64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -1410,9 +1104,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
     - NaN's Found: 1 (0.03%)
 
@@ -1436,26 +1128,6 @@ plot_numeric_vs_target(df, feature);
 - "CentralAir": Central air conditioning
   - N: No
   - Y: Yes
-
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Central Air"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-explore_categorical(df, feature);
-```
 
 
     
@@ -1489,12 +1161,6 @@ explore_categorical(df, feature);
 
 
 
-
-```python
-plot_categorical_vs_target(df, feature);
-```
-
-
     
 ![png](./Images/output_251_0.png)
     
@@ -1513,24 +1179,6 @@ plot_categorical_vs_target(df, feature);
 - "Living Area Sqft" (renamed from original  "GrLivArea"): 
   - Above grade (ground) living area square feet
 
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Living Area Sqft"
-df[feature].dtype
-```
-
-
-
-
-    dtype('float64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -1566,9 +1214,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
 
     
@@ -1588,25 +1234,6 @@ plot_numeric_vs_target(df, feature);
 
 - "Bedroom": Number of bedrooms above basement level
 
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Bedroom"
-df[feature].dtype
-```
-
-
-
-
-    dtype('int64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -1642,9 +1269,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
 
     
@@ -1664,25 +1289,6 @@ plot_numeric_vs_target(df, feature);
 
 - "Kitchen": Number of kitchens
 
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Kitchen"
-df[feature].dtype
-```
-
-
-
-
-    dtype('int64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -1718,9 +1324,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
 
     
@@ -1742,43 +1346,6 @@ plot_numeric_vs_target(df, feature);
   -  Total rooms above grade (does not include bathrooms)
 
 
-```python
-df.columns
-```
-
-
-
-
-    Index(['MS Zoning', 'Lot Frontage', 'Lot Area', 'Street', 'Alley', 'Utilities',
-           'Neighborhood', 'Bldg Type', 'House Style', 'Overall Qual',
-           'Overall Cond', 'Year Built', 'Year Remodeled', 'Exter Qual',
-           'Exter Cond', 'Bsmt Unf Sqft', 'Total Bsmnt Sqft', 'Central Air',
-           'Living Area Sqft', 'Bedroom', 'Kitchen', 'Total Rooms', 'Garage Type',
-           'Garage Yr Blt', 'Garage Cars', 'Garage Area', 'Garage Qual',
-           'Garage Cond', 'Paved Drive', 'Fence', 'SalePrice', 'Month', 'Year',
-           'Total Full Baths', 'Total Half Baths'],
-          dtype='object')
-
-
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Total Rooms"
-df[feature].dtype
-```
-
-
-
-
-    dtype('int64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -1814,9 +1381,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
 
     
@@ -1842,26 +1407,6 @@ plot_numeric_vs_target(df, feature);
   - CarPort: Car Port
   - Detchd" Detached from home
   - NA: No Garage
-
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Garage Type"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-explore_categorical(df, feature);
-```
 
 
     
@@ -1895,13 +1440,6 @@ explore_categorical(df, feature);
   - No.
 
 
-
-
-```python
-plot_categorical_vs_target(df, feature);
-```
-
-
     
 ![png](./Images/output_287_0.png)
     
@@ -1920,24 +1458,6 @@ plot_categorical_vs_target(df, feature);
 - GarageYrBlt: Year garage was built
 
 
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Garage Yr Blt"
-df[feature].dtype
-```
-
-
-
-
-    dtype('float64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -1973,9 +1493,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
     - NaN's Found: 160 (5.46%)
 
@@ -2000,23 +1518,6 @@ plot_numeric_vs_target(df, feature);
 
 
 
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Garage Cars"
-df[feature].dtype
-```
-
-
-
-
-    dtype('float64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -2052,9 +1553,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
     - NaN's Found: 1 (0.03%)
 
@@ -2076,27 +1575,6 @@ plot_numeric_vs_target(df, feature);
 
 
 - GarageArea: Size of garage in square feet
-
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Garage Area"
-df[feature].dtype
-```
-
-
-
-
-    dtype('float64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
-
 
     
 ![png](./Images/output_306_0.png)
@@ -2131,9 +1609,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
     - NaN's Found: 1 (0.03%)
 
@@ -2161,32 +1637,6 @@ plot_numeric_vs_target(df, feature);
   - Fa: Fair
   - Po: Poor
   - NA: No Garage
-
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Garage Qual"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-qual_cond_order = ["NA",'Po', 'Fa', 'TA', 'Gd', 'Ex']
-```
-
-
-```python
-explore_categorical(df, feature, order=qual_cond_order, placeholder = "NA");
-```
-
 
     
 ![png](./Images/output_314_0.png)
@@ -2219,14 +1669,6 @@ explore_categorical(df, feature, order=qual_cond_order, placeholder = "NA");
   - No
 
 
-
-
-```python
-plot_categorical_vs_target(df, feature, order=qual_cond_order, placeholder='NA');
-```
-
-
-    
 ![png](./Images/output_316_0.png)
     
 
@@ -2249,25 +1691,6 @@ plot_categorical_vs_target(df, feature, order=qual_cond_order, placeholder='NA')
   - Po: Poor
   - NA: No Garage
 
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Garage Cond"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-explore_categorical(df, feature, order=qual_cond_order, placeholder = "NA");
-```
 
 
     
@@ -2301,13 +1724,6 @@ explore_categorical(df, feature, order=qual_cond_order, placeholder = "NA");
   - No.
 
 
-
-
-```python
-plot_categorical_vs_target(df, feature, order=qual_cond_order, placeholder='NA');
-```
-
-
     
 ![png](./Images/output_323_0.png)
     
@@ -2328,25 +1744,6 @@ plot_categorical_vs_target(df, feature, order=qual_cond_order, placeholder='NA')
   - P: Partial Pavement
   - N: Dirt/Gravel
 
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Paved Drive"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-explore_categorical(df, feature);
-```
 
 
     
@@ -2380,13 +1777,6 @@ explore_categorical(df, feature);
   - No, the homeowner can get their driveway paved.
 
 
-
-
-```python
-plot_categorical_vs_target(df, feature);
-```
-
-
     
 ![png](./Images/output_330_0.png)
     
@@ -2410,26 +1800,6 @@ plot_categorical_vs_target(df, feature);
   - MnWw: Minimum Wood/Wire
   - NA: No Fence
 
-
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Fence"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-explore_categorical(df, feature);
-```
 
 
     
@@ -2462,14 +1832,6 @@ explore_categorical(df, feature);
 6. Is there a business case/understanding reason to exclude based on our business case?
   - No.
 
-
-
-
-```python
-plot_categorical_vs_target(df, feature);
-```
-
-
     
 ![png](./Images/output_337_0.png)
     
@@ -2488,23 +1850,6 @@ plot_categorical_vs_target(df, feature);
 - SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict for this challenge.
 
 
-```python
-# Confirming the dtype to select correct EDA function
-feature = "SalePrice"
-df[feature].dtype
-```
-
-
-
-
-    dtype('float64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -2546,29 +1891,6 @@ explore_numeric(df, feature);
 - Month Sold
 
 
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Month"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-df['Month'] = df['Month'].astype(float)
-```
-
-
-```python
-explore_numeric(df, feature); 
-```
-
 
     
 ![png](./Images/output_348_0.png)
@@ -2603,9 +1925,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
 
     
@@ -2625,29 +1945,6 @@ plot_numeric_vs_target(df, feature);
 
 - Year Sold
 
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Year"
-df[feature].dtype
-```
-
-
-
-
-    dtype('O')
-
-
-
-
-```python
-df['Year'] = df['Year'].astype(float)
-```
-
-
-```python
-explore_numeric(df, feature);
-```
 
 
     
@@ -2683,9 +1980,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
 
     
@@ -2704,25 +1999,6 @@ plot_numeric_vs_target(df, feature);
 
 
 - Engineered: Combined Full Baths + Bsmnt Full Baths
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Total Full Baths"
-df[feature].dtype
-```
-
-
-
-
-    dtype('float64')
-
-
-
-
-```python
-explore_numeric(df, feature); 
-```
 
 
     
@@ -2758,9 +2034,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
     - NaN's Found: 2 (0.07%)
 
@@ -2781,26 +2055,6 @@ plot_numeric_vs_target(df, feature);
 #### Total Half Baths
 
 - Engineered: Combined Half Baths + Bsmnt Half Baths
-
-
-```python
-# Confirming the dtype to select correct EDA function
-feature = "Total Half Baths"
-df[feature].dtype
-```
-
-
-
-
-    dtype('float64')
-
-
-
-
-```python
-explore_numeric(df, feature);
-```
-
 
     
 ![png](./Images/output_370_0.png)
@@ -2835,9 +2089,7 @@ explore_numeric(df, feature);
 
 
 
-```python
-plot_numeric_vs_target(df, feature);
-```
+
 
     - NaN's Found: 5 (0.17%)
 
