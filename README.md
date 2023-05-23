@@ -2138,7 +2138,7 @@ plot_categorical_vs_target(df, feature);
 - The features were then encoded with OneHotEncoder.
 
 
-
+<a name='phase4'></a>
 # Phase 4) Modeling
 
 
